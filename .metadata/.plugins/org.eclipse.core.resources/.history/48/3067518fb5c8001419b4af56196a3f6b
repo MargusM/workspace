@@ -9,7 +9,7 @@ public class TestMain {
 		Maas rong = new Rööbateel(250, 300, 1530000, 2000, "Rong tshuu");
 		Vees paat = new Väikelaev(50, 10, 300, 4500, "Paadu");
 		
-		//ko
+		
 		
 		paat.väljasta(paat);
 		
