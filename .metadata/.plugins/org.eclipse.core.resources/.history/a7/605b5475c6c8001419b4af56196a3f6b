@@ -1,0 +1,64 @@
+import java.awt.Point;
+
+
+public class MinuPunkt extends Point {
+	int z;
+
+	public MinuPunkt() {
+		super(0, 0);
+		this.z = 0;
+	}
+	
+	public MinuPunkt(MinuPunkt p) {
+		super(p.x, p.y);
+		this.z = p.z;
+	}
+
+
+
+	public MinuPunkt(int x, int y) {
+		super(x, y);
+		this.z = 0;
+	}
+
+	public MinuPunkt(int x, int y, int z) {
+		super(x, y);
+		this.z = z;
+	}
+	
+	public int getZ() {
+		return this.z;
+	}
+
+	public Point getLocation(){
+		return this;
+	}
+	
+	public void setLocation(MinuPunkt p){
+		super.x = p.x;
+		super.y = p.y;
+		this.z = p.z;
+	}
+	
+	public void setLocation(int x, int y){
+		super.x = x;
+		super.y = y;
+		this.z = 0;
+	}
+	
+	public void setLocation(int x, int y, int z){
+		super.x = x;
+		super.y = y;
+		this.z = z;
+	}
+	
+	public String toString(){
+		return "x = " + x + " y = " + y + " z = " + z;
+	}
+	
+	public void translate(int dx, int dy, int dz){
+		setLocation(this.x + dx, this.y + dy, this.z + dz );
+	}
+	
+
+}
