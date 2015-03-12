@@ -1,0 +1,20 @@
+
+public class Väikelaev extends Vees {
+	String nimi;
+
+	public Väikelaev(double kiirus, double reisijateArv, int sõidukaugus,
+			int veeväljasurve, String nimi) {
+		super(kiirus, reisijateArv, sõidukaugus, veeväljasurve);
+		this.nimi = nimi;
+	}
+
+	public String getNimi() {
+		return nimi;
+	}
+
+	public void setNimi(String nimi) {
+		this.nimi = nimi;
+	}
+	
+	
+}

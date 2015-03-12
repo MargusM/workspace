@@ -1,0 +1,18 @@
+
+public class TestPunkt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MinuPunkt p1 = new MinuPunkt();
+		MinuPunkt p2 = new MinuPunkt(3, 5);
+		MinuPunkt p3 = new MinuPunkt(4, 2, 6);
+		
+		System.out.println("Minu punktid on:");
+		System.out.println(p1);
+		System.out.println(p2);
+		System.out.println(p3);
+		
+	}
+
+}

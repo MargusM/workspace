@@ -1,0 +1,21 @@
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Reisimisvahendid lennuk = new Õhus(955, 250, 374850, "Boeing 747-200B", 12700);
+		Reisimisvahendid buss = new Maanteel(100, 55, 25000, 1500, "Scania K34");
+		Maas rong = new Rööbateel(250, 300, 1530000, 2000, "Rong tshuu");
+		Vees paat = new Väikelaev(50, 10, 300, 4500, "Paadu");
+		paat.väljasta(paat);
+		
+		Reisimisvahendid.väljasta(lennuk);
+		
+		System.out.println(((Maanteel)buss).getNimi() + " kulub reisi läbimiseks " + buss.Reisiaeg());
+		
+	}
+	
+	
+
+}

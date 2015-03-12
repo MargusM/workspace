@@ -1,0 +1,17 @@
+
+public class Maas extends Reisimisvahendid {
+	private int mass;
+	
+
+	public Maas(double kiirus, double reisijateArv, int mass, int sõidukaugus) {
+		super(kiirus, reisijateArv, sõidukaugus);
+		this.mass = mass;
+	}
+
+	public int getMass() {
+		return mass;
+	}
+	
+	
+	
+}

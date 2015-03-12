@@ -1,0 +1,30 @@
+
+public class Õhus extends Reisimisvahendid {
+	private int mass;
+	String nimi;
+	
+	
+	public Õhus(double kiirus, int reisijateArv, int mass, String nimi,
+			int lennukaugus) {
+		super(kiirus, reisijateArv, lennukaugus);
+		this.mass = mass;
+		this.nimi = nimi;
+		
+	}
+
+	public int getMass() {
+		return mass;
+	}
+
+	public String getNimi() {
+		return nimi;
+	}
+
+	public String toString(){
+		return "Lennumasin " + nimi + " massiga " + mass + "\n" + super.toString();
+	}
+	
+	public 
+	
+	
+}
