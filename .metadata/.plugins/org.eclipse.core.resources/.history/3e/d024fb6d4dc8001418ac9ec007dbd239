@@ -24,7 +24,7 @@ public class Õhus extends Reisimisvahendid {
 		return "Lennumasin " + nimi + " massiga " + mass + "\n" + super.toString();
 	}
 	
-	
+	public 
 	
 	
 }
